@@ -1,13 +1,16 @@
-import React from 'react';
-
+import React from "react";
 
 const Services = () => {
-    return (
-        <div className="homepage">
-            <h1>Services</h1>
-          
-        </div>
-    );
+  return (
+    <div>
+      <h1>Nos Services</h1>
+      <ul>
+        <li>Restauration</li>
+        <li>Visites guidées</li>
+        <li>Petit train</li>
+      </ul>
+    </div>
+  );
 };
 
 export default Services;
