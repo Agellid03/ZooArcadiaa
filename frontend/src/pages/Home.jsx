@@ -1,6 +1,8 @@
 import React from 'react';
 import BigTitle from '../components/BigTitle';
 import ServicesSection from '../components/ServicesSection';
+import HabitatsSection from '../components/HabitatsSection';
+import ReviewsSection from '../components/ReviewsSection';
 
 const Home = () => {
     return (<>
@@ -12,7 +14,9 @@ const Home = () => {
           showButton={true}
         />
       </div>
+      <HabitatsSection/>
       <ServicesSection/>
+      <ReviewsSection/>
       </>
       );
 };

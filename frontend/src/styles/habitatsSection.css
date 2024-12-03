@@ -2,6 +2,7 @@
 .habitats_section {
   padding: 20px; /* Ajout d'un espace autour de la section */
   margin: 0; /* Supprime les marges extérieures */
+  background-color: var(--secondary-color);
 }
 
 /* Style des liens entourant chaque carte */
@@ -38,7 +39,6 @@
   left: 50%; /* Centre horizontalement */
   transform: translateX(-50%); /* Centre parfaitement */
   color: white !important; /* Assure une lisibilité optimale */
-  background-color: rgba(0, 0, 0, 0.6); /* Ajoute un fond semi-transparent */
   padding: 5px 10px; /* Ajoute de l'espace autour du texte */
   border-radius: 5px; /* Adoucit les bords */
   font-family: var(--subtitle, Arial, sans-serif); /* Utilise une police par défaut si la variable n'existe pas */
