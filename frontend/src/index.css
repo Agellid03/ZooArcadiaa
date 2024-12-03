@@ -1,13 +1,20 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* Import des polices depuis Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Variables globales */
+:root {
+  --primary-color: #6096ba; /* Bleu clair */
+  --secondary-color: #bbd686; /* Vert clair */
+  --secondary-color-darker: #617d2a; /* Vert foncé */
+  --dark: #292222; /* Noir profond */
+  --light: #f9f9f9; /* Blanc cassé */
+  --error-color: #e63946; /* Rouge pour les erreurs */
+  --success-color: #4caf50; /* Vert pour le succès */
+
+  --headline: "Playfair Display", serif; /* Police pour les titres principaux */
+  --headline-semiBold: "Playfair Display", serif; /* Semi-bold géré avec font-weight */
+  --subtitle: "Raleway", sans-serif; /* Police pour les sous-titres */
+  --text-content: "Roboto", sans-serif; /* Police pour le texte standard */
 }
