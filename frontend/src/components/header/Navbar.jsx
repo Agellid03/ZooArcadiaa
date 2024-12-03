@@ -24,22 +24,22 @@ const ClientNavbar = () => {
       <Collapse isOpen={isOpen} navbar>
         <Nav className="ms-auto" navbar>
           <NavItem>
-            <NavLink className="nav-link" to="/" activeClassName="active">
+            <NavLink className="nav-link" to="/" activeclassname="active">
               Accueil
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className="nav-link" to="/services" activeClassName="active">
+            <NavLink className="nav-link" to="/services" activeclassname="active">
               Services
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className="nav-link" to="/habitats" activeClassName="active">
+            <NavLink className="nav-link" to="/habitats" activeclassname="active">
               Habitats
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className="nav-link" to="/contact" activeClassName="active">
+            <NavLink className="nav-link" to="/contact" activeclassname="active">
               Contact
             </NavLink>
           </NavItem>
