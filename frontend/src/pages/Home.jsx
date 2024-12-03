@@ -1,12 +1,17 @@
 import React from 'react';
+import BigTitle from '../components/BigTitle';
 
-const HomePage = () => {
+const Home = () => {
     return (
-        <div className="homepage">
-            <h1>Bienvenue au Zoo d'Arcadia !</h1>
-            <p>Découvrez nos animaux, habitats, et services exceptionnels !</p>
-        </div>
+        <div className="section">
+        <BigTitle
+          title="Le Zoo d’Arcadia, un lieu préservé pour s'emmerveiller"
+          subtitle="Nos Habitats"
+          imageUrl="./images/Savane.jpeg"
+          showButton={true}
+        />
+      </div>
     );
 };
 
-export default HomePage;
+export default Home;
