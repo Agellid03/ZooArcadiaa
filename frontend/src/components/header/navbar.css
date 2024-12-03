@@ -1,0 +1,38 @@
+/* Conteneur principal de la barre de navigation */
+.container_navbar {
+  background-color: var(--primary-color); /* Utilise la couleur principale définie dans la charte graphique */
+  width: 100%; /* La barre de navigation prend toute la largeur de l'écran */
+  z-index: 1000; /* Priorité élevée pour éviter que d'autres éléments ne passent par-dessus */
+  margin: 0; /* Supprime les marges pour aligner correctement la navbar */
+}
+
+/* Style pour le nom de la marque et les liens */
+.nav-brand, /* Le nom de la marque (logo ou texte) */
+.nav-link { /* Les liens de navigation */
+  font-family: var(--headline); /* Utilisation de la police "headline" définie dans la charte graphique */
+  color: white !important; /* Texte blanc pour contraster avec le fond de la navbar */
+  text-decoration: none !important; /* Supprime le soulignement par défaut des liens */
+}
+
+.nav-link.active {
+  font-weight: bold; /* Met en valeur le lien actif */
+}
+.nav-link:hover {
+  color: var(--secondary-color) !important;
+}
+
+
+.navbar-toggler {
+  color: white;
+  border: none; /* Supprime le contour par défaut */
+}
+
+/* Contenu sous la barre de navigation */
+.content {
+  padding-top: 70px; /* Crée un espace sous la navbar pour que le contenu ne soit pas caché */
+}
+
+.collapse {
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
+}

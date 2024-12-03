@@ -101,9 +101,6 @@ a:hover {
 
 /* Media queries pour la responsivité */
 @media (max-width: 768px) {
-  .page-container {
-    padding: 0 1rem;
-  }
 
   h1 {
     font-size: 2rem;
