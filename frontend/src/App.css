@@ -37,7 +37,7 @@ h1 {
 h2 {
   font-family: var(--headline-semiBold);
   font-size: 2rem;
-  color: var(--primary-color);
+ 
 }
 
 h3,
@@ -85,14 +85,6 @@ button:hover {
 button:disabled {
   background-color: #d3d3d3;
   cursor: not-allowed;
-}
-
-/* Liens globaux */
-
-
-a:hover {
-  
-  text-decoration: underline;
 }
 
 /* Media queries pour la responsivité */

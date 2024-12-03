@@ -1,0 +1,69 @@
+/* styles/servicesSection.css */
+
+.services_section {
+  background-color: #f9f9f9; /* Couleur de fond douce pour séparer cette section */
+}
+
+.service-link {
+  text-decoration: none; /* Enlever les soulignements des liens */
+  display: block;
+  transition: transform 0.3s ease-in-out; /* Transition douce lors du survol */
+}
+
+.service-link:hover {
+  transform: scale(1.05); /* Effet zoom sur le survol */
+}
+
+.service-card {
+  border: 1px solid #ddd; /* Légère bordure pour bien délimiter chaque carte */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Ombre légère pour un effet 3D */
+  background-color: #fff; /* Fond blanc pour chaque carte */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transitions pour la carte */
+}
+
+.service-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Ombre plus marquée sur le survol */
+  transform: translateY(-5px); /* Légère élévation de la carte */
+}
+
+.service-icon {
+  margin-bottom: 10px;
+}
+
+.service-card-title {
+  font-weight: bold;
+}
+
+.service-card-text {
+  color: #666;
+}
+
+/* Styles pour les écrans plus petits */
+@media (max-width: 768px) {
+  .service-card-title {
+    font-size: 1.1rem; /* Réduction de la taille du titre */
+  }
+
+  .service-card-text {
+    font-size: 0.95rem; /* Réduction de la taille du texte */
+  }
+
+  .service-icon {
+    font-size: 2.5rem; /* Réduction des icônes sur les petits écrans */
+  }
+}
+
+@media (max-width: 480px) {
+  .service-card-title {
+    font-size: 1rem; /* Plus petite taille de titre */
+  }
+
+  .service-card-text {
+    font-size: 0.85rem; /* Texte plus petit pour les petits écrans */
+  }
+
+  .service-icon {
+    font-size: 2rem; /* Encore plus petit pour les petits écrans */
+  }
+}
