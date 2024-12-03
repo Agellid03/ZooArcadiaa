@@ -64,7 +64,6 @@ p {
 
 .content-wrap {
   flex: 1;
-  padding: 1rem;
 }
 
 /* Boutons globaux */
@@ -89,13 +88,10 @@ button:disabled {
 }
 
 /* Liens globaux */
-a {
-  color: var(--primary-color);
-  text-decoration: none;
-}
+
 
 a:hover {
-  color: var(--secondary-color);
+  
   text-decoration: underline;
 }
 
