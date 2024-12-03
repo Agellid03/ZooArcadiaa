@@ -1,0 +1,40 @@
+.footer {
+  background-color: var(--primary-dark, #333); /* Couleur de fond */
+  color: var(--light, #fff); /* Couleur du texte */
+  padding: 20px 0;
+  font-family: var(--body-font, Arial, sans-serif);
+  border-top: 2px solid var(--secondary, #555); /* Séparation visuelle */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+}
+
+.footer h5 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-family: var(--title-font, "Helvetica Neue", sans-serif);
+}
+
+.footer p {
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+.footer a {
+  color: var(--light, #fff);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: var(--secondary, #f0a500); /* Couleur de survol */
+}
+
+@media (max-width: 768px) {
+  .footer h5, 
+  .footer p {
+    text-align: center;
+  }
+
+  .footer > .row {
+    gap: 20px; /* Ajout d'un espace entre les colonnes */
+  }
+}

@@ -21,7 +21,7 @@ const AppRouter = () => {
           <Route path="/contact" element={<Contacts />} />
         </Routes>
       </div>
-      <Footer />
+       <Footer /> 
     </div>
   );
 };

@@ -14,6 +14,7 @@ html {
   font-family: var(--text-content);
   color: var(--dark);
   background-color: #f9f9f9; /* Couleur de fond neutre */
+  
 }
 
 /* Conteneur principal de l'application */
