@@ -1,0 +1,35 @@
+.habitat_card {
+  border: none;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.habitat_link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.habitat_card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.1);
+}
+
+.habitat_card_img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.habitat_card_title {
+  font-family: var(--subtitle);
+  font-size: 1.2rem;
+  color: white !important;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
