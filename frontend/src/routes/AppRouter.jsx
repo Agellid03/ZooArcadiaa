@@ -9,6 +9,9 @@ import DetailsHabitat from "../pages/DetailsHabitat";
 import Contact from "../pages/Contact";
 import Login from "../pages/Login";
 import AdminDashboard from "../components/admin/AdminDashboard";
+import ManageAccounts from "../components/admin/ManageAccounts";
+import ManageZooEntities from "../components/admin/ManageZooEntities"
+import VeterinaryReports from "../components/admin/VeterinaryReports"
 
 const AppRouter = () => {
   return (
@@ -23,11 +26,14 @@ const AppRouter = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login/>} />
           <Route path="/admin/*" element={<AdminDashboard/>} />
+          <Route path="admin/GestionEmployes" element={<ManageAccounts/>} ></Route>
+          <Route path="admin/GestionServices" element={<ManageZooEntities/>} ></Route>
+          <Route path="admin/RapportsVeterinaire" element={<VeterinaryReports/>} ></Route>
         </Routes>
-        
-      </div>
-       <Footer /> 
+        </div>
+      <Footer /> 
     </div>
+      
   );
 };
 

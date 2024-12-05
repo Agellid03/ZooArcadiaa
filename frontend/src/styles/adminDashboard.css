@@ -27,25 +27,25 @@
 }
 
 /* Cartes de statistiques */
-.card {
+.card-dashboard-admin {
   padding: 20px;
-  background-color: #f4f4f4;
+  background-color: whitesmoke;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
 }
 
-.card:hover {
+.card-dashboard-admin:hover {
   transform: translateY(-10px);
 }
 
-.card h3 {
+.card-dashboard-admin h3 {
   font-size: 1.5rem;
   color: #4CAF50;
   margin-bottom: 10px;
 }
 
-.card p {
+.card-dashboard-admin p {
   font-size: 1.2rem;
   font-weight: bold;
   color: #333;
@@ -56,13 +56,13 @@
   margin-top: 30px;
 }
 
-.row {
+.dashboard-admin-row {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
 
-.col {
+.col-admin-dashboard {
   flex: 1 1 30%; /* Chaque carte prend 30% de la largeur sur des écrans moyens et plus grands */
   min-width: 280px;
   box-sizing: border-box;
@@ -80,16 +80,16 @@
     padding: 8px 15px;
   }
 
-  .row {
+  .dashboard-admin-row {
     flex-direction: column;
     align-items: center;
   }
 
-  .col {
+  .col-admin-dashboard {
     width: 100%; /* Les cartes prennent toute la largeur sur les petits écrans */
   }
 
-  .card {
+  .card-dashboard-admin {
     padding: 15px;
   }
 }
@@ -106,15 +106,15 @@
     min-width: 120px;
   }
 
-  .card {
+  .card-dashboard-admin {
     padding: 12px;
   }
 
-  .card h3 {
+  .card-dashboard-admin h3 {
     font-size: 1.2rem;
   }
 
-  .card p {
+  .card-dashboard-admin p {
     font-size: 1rem;
   }
 }
