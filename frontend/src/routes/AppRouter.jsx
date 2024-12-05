@@ -8,6 +8,7 @@ import AllHabitats from "../pages/AllHabitats";
 import DetailsHabitat from "../pages/DetailsHabitat";
 import Contact from "../pages/Contact";
 import Login from "../pages/Login";
+import AdminDashboard from "../components/admin/AdminDashboard";
 
 const AppRouter = () => {
   return (
@@ -21,7 +22,9 @@ const AppRouter = () => {
           <Route path="/habitats/:name" element={<DetailsHabitat />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login/>} />
+          <Route path="/admin/*" element={<AdminDashboard/>} />
         </Routes>
+        
       </div>
        <Footer /> 
     </div>
