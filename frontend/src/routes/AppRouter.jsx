@@ -7,6 +7,7 @@ import Services from "../pages/Services";
 import AllHabitats from "../pages/AllHabitats";
 import DetailsHabitat from "../pages/DetailsHabitat";
 import Contact from "../pages/Contact";
+import Login from "../pages/Login";
 
 const AppRouter = () => {
   return (
@@ -19,6 +20,7 @@ const AppRouter = () => {
           <Route path="/habitats" element={<AllHabitats />} />
           <Route path="/habitats/:name" element={<DetailsHabitat />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Login/>} />
         </Routes>
       </div>
        <Footer /> 

@@ -55,6 +55,11 @@ const ClientNavbar = () => {
               Contact
             </NavLink>
           </NavItem>
+          <NavItem>
+            <NavLink className="nav-link" to="/login" activeclassname="active">
+              Connexion
+            </NavLink>
+          </NavItem>
         </Nav>
       </Collapse>
     </Navbar>
