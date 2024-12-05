@@ -54,6 +54,9 @@
   text-decoration: none;
   font-family: var(--subtitle);
 }
+.custom_btn_link:hover {
+  background-color: var(--secondary-color-darker);
+} 
 
 @media (max-width: 768px) {
   .big_title {

@@ -14,13 +14,13 @@
 
 .contact_form input,
 .contact_form textarea {
-  border: 1px solid var(--primary-dark);
+  border: 1px solid var(--secondary-color-darker);
   padding: 10px;
   font-size: 1rem;
 }
 
 .contact_form button {
-  background-color: var(--primary-dark);
+  background-color: var(--secondary-color);
   color: var(--light);
   padding: 10px 20px;
   border: none;
@@ -29,9 +29,9 @@
   transition: background-color 0.3s ease;
 }
 
-.contact_form button:hover {
-  background-color: var(--primary);
-}
+ .contact_form button:hover {
+  background-color: var(--secondary-color-darker);
+} 
 
 .text-success {
   font-size: 1rem;

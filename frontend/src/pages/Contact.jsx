@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Container, Form, FormGroup, Label, Input, Button } from "reactstrap";
 import "../styles/contact.css";
+import BigTitle from "../components/BigTitle";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -33,8 +34,12 @@ const Contact = () => {
   };
 
   return (
+    <> 
+  <BigTitle
+    title="Contactez-nous !"
+    imageUrl="./images/PandaRoux.jpeg"
+    />  
     <Container className="contact_page py-5">
-      <h2 className="text-center mb-4">Contactez-nous</h2>
       <Form onSubmit={handleSubmit} className="contact_form">
         <FormGroup>
           <Label for="title">Titre</Label>
@@ -78,6 +83,7 @@ const Contact = () => {
         {successMessage && <p className="mt-3 text-success">{successMessage}</p>}
       </Form>
     </Container>
+    </>
   );
 };
 
