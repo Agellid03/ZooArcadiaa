@@ -6,14 +6,6 @@ import "../../styles/vetDashboard.css";
 const VetDashboard = () => {
   const navigate = useNavigate();
 
-  const goToManageAccounts = () => {
-    navigate('/employes/GererRapports');
-  };
-
-  const goToManageZooEntities = () => {
-    navigate('/employes/HistoriqueAlimentation');
-  };
-
   return (
     <div className="vet-dashboard">
       <h2>Bienvenue, Vétérinaire</h2>
