@@ -65,6 +65,11 @@ const ClientNavbar = () => {
               Admin
             </NavLink>
           </NavItem>
+          <NavItem>
+            <NavLink className="nav-link" to="/employes/Dashboard" activeclassname="active">
+              Employe
+            </NavLink>
+          </NavItem>
         </Nav>
       </Collapse>
     </Navbar>

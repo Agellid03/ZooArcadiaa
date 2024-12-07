@@ -1,0 +1,150 @@
+/* Style général du dashboard employé */
+.employee-dashboard {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.employee-dashboard h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.employee-dashboard h3 {
+  margin-top: 30px;
+  color: #34495e;
+}
+
+.table {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table th,
+.table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table th {
+  background-color: #2c3e50;
+  color: #ffffff;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #eaf1f8;
+}
+
+.table tbody tr:hover {
+  background-color: #d3e2f1;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Style pour le bouton d'ajout d'entrée */
+.add-entry-btn {
+  display: block;
+  margin: 10px auto;
+  background-color: #27ae60;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.add-entry-btn:hover {
+  background-color: #219150;
+}
+
+.add-entry-btn:focus {
+  outline: none;
+}
+
+/* Style pour les boutons valider/rejeter */
+.action-btn {
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: transform 0.2s;
+}
+
+.action-btn:focus {
+  outline: none;
+}
+
+.action-btn-success {
+  background-color: #2ecc71;
+}
+
+.action-btn-success:hover {
+  transform: scale(1.1);
+  background-color: #27ae60;
+}
+
+.action-btn-danger {
+  background-color: #e74c3c;
+}
+
+.action-btn-danger:hover {
+  transform: scale(1.1);
+  background-color: #c0392b;
+}
+
+/* Style pour le modal */
+.modal-header {
+  background-color: #34495e;
+  color: #ffffff;
+}
+
+.modal-footer button {
+  transition: background-color 0.3s;
+}
+
+.modal-footer .btn-secondary {
+  background-color: #95a5a6;
+}
+
+.modal-footer .btn-primary {
+  background-color: #3498db;
+}
+
+.modal-footer .btn-primary:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .employee-dashboard h2 {
+    font-size: 24px;
+  }
+
+  .employee-dashboard h3 {
+    font-size: 20px;
+  }
+
+  .table {
+    font-size: 12px;
+  }
+
+  .action-btn {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .add-entry-btn {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}
