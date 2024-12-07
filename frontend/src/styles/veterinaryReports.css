@@ -1,0 +1,126 @@
+/* Container principal */
+.vet-reports-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Titre principal */
+.vet-reports-list h2 {
+  font-size: 2rem;
+  color: #343a40;
+  font-weight: 600;
+}
+
+/* Card des filtres */
+.vet-reports-list .card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vet-reports-list .card h4 {
+  color: #007bff;
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+/* Formulaires de filtre */
+.vet-reports-list .form-group {
+  margin-bottom: 1rem;
+}
+
+.vet-reports-list .form-control {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.vet-reports-list .form-label {
+  font-weight: 600;
+}
+
+.vet-reports-list .btn {
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+.vet-reports-list .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.vet-reports-list .btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.vet-reports-list .btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.vet-reports-list .btn-secondary:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+/* Tableau des rapports */
+.vet-reports-list .table {
+  margin-top: 30px;
+  border: 1px solid #ddd;
+}
+
+.vet-reports-list .table th,
+.vet-reports-list .table td {
+  text-align: center;
+  padding: 15px;
+}
+
+.vet-reports-list .table th {
+  background-color: #f1f1f1;
+  font-weight: bold;
+}
+
+.vet-reports-list .table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.vet-reports-list .table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Cellule de la table */
+.vet-reports-list .table td {
+  font-size: 0.95rem;
+}
+
+/* Table responsive pour petits écrans */
+@media (max-width: 768px) {
+  .vet-reports-list h2 {
+    font-size: 1.5rem;
+  }
+
+  .vet-reports-list .table th, .vet-reports-list .table td {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+
+  .vet-reports-list .form-control {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .vet-reports-list .btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .vet-reports-list .card {
+    padding: 20px;
+  }
+}
