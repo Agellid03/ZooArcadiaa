@@ -1,0 +1,92 @@
+/* Tableau */
+.users-table {
+  font-size: 1rem;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.users-table th,
+.users-table td {
+  vertical-align: middle;
+  text-align: center;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.column-id {
+  width: 10%;
+}
+
+.column-email {
+  width: 40%;
+}
+
+.column-role {
+  width: 20%;
+}
+
+.column-actions {
+  width: 30%;
+}
+
+/* Responsivité pour les écrans moyens */
+@media (max-width: 768px) {
+  .users-table {
+    font-size: 0.9rem;
+  }
+
+  .column-email {
+    width: 50%;
+  }
+
+  .column-role,
+  .column-actions {
+    width: 25%;
+  }
+
+  .action-btn {
+    font-size: 0.8rem;
+    padding: 5px 8px;
+  }
+}
+
+/* Responsivité pour les écrans très petits */
+@media (max-width: 576px) {
+  .users-table thead {
+    display: none; /* Masquer l'en-tête */
+  }
+
+  .users-table tr {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .users-table td {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+
+  .users-table td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    text-transform: uppercase;
+    flex-basis: 40%;
+  }
+
+  .column-id,
+  .column-email,
+  .column-role,
+  .column-actions {
+    width: 100%; /* Assurer un alignement vertical */
+  }
+
+  .action-btn {
+    margin: 5px 0;
+    font-size: 0.75rem;
+    padding: 4px 6px;
+  }
+}

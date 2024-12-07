@@ -8,8 +8,8 @@ const HabitatSection = () => {
   // Liste des habitats avec leur nom et le chemin de leur image
   const habitats = [
     { name: "Savane", imageUrl: "./images/Savane2.jpeg" },
-    { name: "Forêt", imageUrl: "./images/Foret.jpeg" },
-    { name: "Volière", imageUrl: "./images/Voliere.jpeg" },
+    { name: "Foret", imageUrl: "./images/Foret.jpeg" },
+    { name: "Voliere", imageUrl: "./images/Voliere.jpeg" },
     { name: "Aquarium", imageUrl: "./images/Aquarium.jpeg" },
   ];
 
