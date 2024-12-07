@@ -18,7 +18,7 @@ const AdminDashboard = () => {
   };
   
   const goToAnimalsStats = () => {
-    navigate('/admin/ConsultationsDesAnimaux');
+    navigate('/admin/ConsultationsAnimaux');
   };
   return (
     <div className="admin-dashboard container">

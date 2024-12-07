@@ -30,7 +30,7 @@ const AppRouter = () => {
           <Route path="admin/GestionEmployes" element={<ManageAccounts/>} ></Route>
           <Route path="admin/GestionServices" element={<ManageZooEntities/>} ></Route>
           <Route path="admin/RapportsVeterinaire" element={<VeterinaryReports/>} ></Route>
-          <Route path="admin/StatiquesAnimaux" element={<AnimalsStats/>} ></Route>
+          <Route path="admin/ConsultationsAnimaux" element={<AnimalsStats/>} ></Route>
         </Routes>
         </div>
       <Footer /> 
