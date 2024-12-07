@@ -20,6 +20,10 @@ const AdminDashboard = () => {
   const goToAnimalsStats = () => {
     navigate('/admin/ConsultationsAnimaux');
   };
+
+  const goToManageHabitats = () => {
+    navigate('/admin/GestionHabitats');
+  };
   return (
     <div className="admin-dashboard container">
       <header className="dashboard-header text-center mt-4">
@@ -42,6 +46,9 @@ const AdminDashboard = () => {
         </Button>
         <Button variant="success" className="m-2" onClick={goToAnimalsStats} >
           <i className="fa fa-chart-bar"></i> Consultations Animaux
+        </Button>
+        <Button variant="success" className="m-2" onClick={goToManageHabitats} >
+          <i className="fa fa-chart-bar"></i> Gestion des habitats
         </Button>
       </div>
 

@@ -13,6 +13,7 @@ import ManageAccounts from "../components/admin/ManageAccounts";
 import ManageZooEntities from "../components/admin/ManageZooEntities"
 import VeterinaryReports from "../components/admin/VeterinaryReports"
 import AnimalsStats from "../components/admin/AnimalsStats"
+import ManageHabitats from "../components/admin/ManageHabitats";
 
 const AppRouter = () => {
   return (
@@ -31,6 +32,7 @@ const AppRouter = () => {
           <Route path="admin/GestionServices" element={<ManageZooEntities/>} ></Route>
           <Route path="admin/RapportsVeterinaire" element={<VeterinaryReports/>} ></Route>
           <Route path="admin/ConsultationsAnimaux" element={<AnimalsStats/>} ></Route>
+          <Route path="admin/GestionHabitats" element={<ManageHabitats/>} ></Route>
         </Routes>
         </div>
       <Footer /> 
