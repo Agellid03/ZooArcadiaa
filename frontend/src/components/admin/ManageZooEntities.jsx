@@ -1,43 +1,112 @@
 import React, { useState } from "react";
+import { Table, Button, Form, Card } from "react-bootstrap";
 
 const ManageZooEntities = () => {
-  const [habitats, setHabitats] = useState([
-    { id: 1, name: "Savane", description: "Habitat des animaux de la savane" },
+  const [services, setServices] = useState([
+    { id: 1, name: "Restauration", description: "Un espace pour déjeuner au zoo." },
+    { id: 2, name: "Visites guidées", description: "Des guides pour découvrir le zoo." },
+    { id: 3, name: "Petit train", description: "Un train pour se déplacer dans le zoo." },
   ]);
-  const [newHabitat, setNewHabitat] = useState({ name: "", description: "" });
 
-  const addHabitat = () => {
-    setHabitats([...habitats, { id: Date.now(), ...newHabitat }]);
-    setNewHabitat({ name: "", description: "" });
+  const handleDelete = (id) => {
+    setServices(services.filter((service) => service.id !== id));
+  };
+
+  const handleAdd = (e) => {
+    e.preventDefault();
+    const newService = {
+      id: services.length + 1,
+      name: e.target.name.value,
+      description: e.target.description.value,
+    };
+    setServices([...services, newService]);
+    e.target.reset();
   };
 
   return (
-    <div>
-      <h2>Gestion des Habitats</h2>
-      <ul>
-        {habitats.map((habitat) => (
-          <li key={habitat.id}>{habitat.name}</li>
-        ))}
-      </ul>
-      <div>
-        <input
-          type="text"
-          placeholder="Nom"
-          value={newHabitat.name}
-          onChange={(e) =>
-            setNewHabitat({ ...newHabitat, name: e.target.value })
-          }
-        />
-        <input
-          type="text"
-          placeholder="Description"
-          value={newHabitat.description}
-          onChange={(e) =>
-            setNewHabitat({ ...newHabitat, description: e.target.value })
-          }
-        />
-        <button onClick={addHabitat}>Ajouter Habitat</button>
-      </div>
+    <div className="manage-zoo-entities">
+      <h2>Gestion des Services</h2>
+      <Table striped bordered hover>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th>Description</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {services.map((service) => (
+            <tr key={service.id}>
+              <td>{service.id}</td>
+              <td>{service.name}</td>
+              <td>{service.description}</td>
+              <td>
+                <Button
+                  variant="warning"
+                  className="m-1"
+                  onClick={() => alert(`Modifier le service ${service.name}`)}
+                >
+                  Modifier
+                </Button>
+                <Button
+                  variant="danger"
+                  className="m-1"
+                  onClick={() => handleDelete(service.id)}
+                >
+                  Supprimer
+                </Button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </Table>
+
+
+ {/* Ajout d'un nouveau service */}
+ <h3 className="mt-4">Ajouter un nouveau service</h3>
+<div className="add-service-container">
+  <Card className="add-service-card">
+    <Card.Header as="h5" className="text-center bg-primary text-white">
+      Nouveau Service
+    </Card.Header>
+    <Card.Body>
+      <Form onSubmit={handleAdd} className="add-service-form">
+        <Form.Group className="mb-3" controlId="formServiceName">
+          <Form.Label>Nom du Service</Form.Label>
+          <Form.Control
+            type="text"
+            name="name"
+            placeholder="Ex : Visite guidée"
+            required
+            className="form-input"
+          />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formServiceDescription">
+          <Form.Label>Description</Form.Label>
+          <Form.Control
+            as="textarea"
+            name="description"
+            placeholder="Décrivez le service ici"
+            rows={3}
+            required
+            className="form-input"
+          />
+        </Form.Group>
+        <div className="text-center">
+          <Button
+            variant="success"
+            type="submit"
+            className="btn-add-service"
+          >
+            <i className="fa fa-plus-circle me-2"></i>Ajouter le service
+          </Button>
+        </div>
+      </Form>
+    </Card.Body>
+  </Card>
+</div>
+
     </div>
   );
 };
