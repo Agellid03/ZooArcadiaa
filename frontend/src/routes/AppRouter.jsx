@@ -15,6 +15,7 @@ import VeterinaryReports from "../components/admin/VeterinaryReports"
 import AnimalsStats from "../components/admin/AnimalsStats"
 import ManageHabitats from "../components/admin/ManageHabitats";
 import EmployeDashboard from "../components/employes/EmployeDashboard";
+import VetDashboard from "../components/employes/VetDashboard";
 
 const AppRouter = () => {
   return (
@@ -35,6 +36,7 @@ const AppRouter = () => {
           <Route path="admin/ConsultationsAnimaux" element={<AnimalsStats/>} ></Route>
           <Route path="admin/GestionHabitats" element={<ManageHabitats/>} ></Route>
           <Route path="employes/Dashboard" element={<EmployeDashboard/>} ></Route>
+          <Route path="employes/vetDashboard" element={<VetDashboard/>} ></Route>
         </Routes>
         </div>
       <Footer /> 
