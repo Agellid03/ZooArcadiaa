@@ -6,6 +6,14 @@ import "../../styles/vetDashboard.css";
 const VetDashboard = () => {
   const navigate = useNavigate();
 
+  const goToVetReports = () => {
+    navigate('/employes/VetRapports');
+  };
+
+  const goToFoodHistory = () => {
+    navigate('/employes/AlimentationHistorique');
+  };
+
   return (
     <div className="vet-dashboard">
       <h2>Bienvenue, Vétérinaire</h2>
@@ -14,7 +22,7 @@ const VetDashboard = () => {
       <div className="vet-dashboard-buttons">
         <Button
           variant="primary"
-          onClick={() => navigate("/vet/reports")}
+          onClick={goToVetReports} 
           className="dashboard-button"
         >
           <i className="fa fa-file-text"></i> Gérer les comptes rendus
@@ -22,7 +30,7 @@ const VetDashboard = () => {
 
         <Button
           variant="success"
-          onClick={() => navigate("/vet/food-history")}
+          onClick={goToFoodHistory} 
           className="dashboard-button"
         >
           <i className="fa fa-cutlery"></i> Historique de l'alimentation

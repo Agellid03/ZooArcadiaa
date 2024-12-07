@@ -1,0 +1,27 @@
+.food-history {
+  padding: 20px;
+}
+
+.food-history h2 {
+  color: #007bff;
+  text-align: center;
+}
+
+.food-history .food-form h3,
+.food-history .food-list h3 {
+  color: #17a2b8;
+  margin-bottom: 15px;
+}
+
+.food-history .food-form {
+  margin-bottom: 30px;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.table th, .table td {
+  text-align: center;
+  vertical-align: middle;
+}

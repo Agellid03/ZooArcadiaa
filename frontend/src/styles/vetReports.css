@@ -1,0 +1,26 @@
+.vet-reports {
+  padding: 20px;
+}
+
+.vet-reports h2 {
+  color: #007bff;
+  text-align: center;
+}
+
+.vet-reports .report-form {
+  margin-bottom: 30px;
+}
+
+.vet-reports .report-form h3 {
+  color: #28a745;
+  margin-bottom: 15px;
+}
+
+.vet-reports .report-list h3 {
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
