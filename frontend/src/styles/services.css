@@ -1,0 +1,36 @@
+.all_services_page {
+  background-color: #f9f9f9; /* Fond de la page */
+  padding: 40px 20px;
+}
+
+.service_link {
+  text-decoration: none; /* Retire le soulignement des liens */
+  color: inherit; /* Garde la couleur par défaut du texte */
+}
+
+.service_card {
+  border: none; /* Retire les bordures des cartes */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation au survol */
+  position: relative;
+}
+
+.service_card:hover {
+  transform: scale(1.05); /* Agrandit la carte au survol */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Ombre légère au survol */
+}
+
+.service_icon {
+  font-size: 3rem; /* Taille des icônes */
+  margin-bottom: 10px; /* Espace sous l'icône */
+}
+
+.service_card_title {
+  font-size: 1.3rem; /* Taille du titre du service */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.service_card_text {
+  font-size: 1rem; /* Taille du texte descriptif */
+  color: #555; /* Couleur du texte pour une meilleure lisibilité */
+}

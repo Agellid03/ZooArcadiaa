@@ -1,0 +1,60 @@
+/* Section principale contenant les habitats */
+.habitats_section {
+  padding: 20px; 
+  margin: 0; 
+  background-color: var(--secondary-color);
+}
+
+/* Style des liens entourant chaque carte */
+.habitat-link {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+/* Style des cartes */
+.habitat-card {
+  border: none; 
+  overflow: hidden; 
+  transition: transform 0.3s ease-in-out; 
+  position: relative; 
+}
+
+/* Effet au survol des cartes */
+.habitat-card:hover {
+  transform: scale(1.05); /* Légère mise en valeur de la carte */
+}
+
+/* Style des images dans les cartes */
+.habitat-card-img {
+  height: 200px; 
+  width: 100%; 
+  object-fit: cover; 
+  border-radius: 10px; 
+}
+
+/* Style du titre dans chaque carte */
+.habitat-card-title {
+  position: absolute; /* Positionne le titre par rapport à la carte */
+  bottom: 10px; /* Le titre est proche du bas de la carte */
+  left: 50%; /* Centre horizontalement */
+  transform: translateX(-50%); /* Centre parfaitement */
+  color: white !important; /* Assure une lisibilité optimale */
+  padding: 5px 10px; /* Ajoute de l'espace autour du texte */
+  border-radius: 5px; /* Adoucit les bords */
+  font-family: var(--subtitle, Arial, sans-serif); /* Utilise une police par défaut si la variable n'existe pas */
+  font-size: 1.2rem; /* Taille du texte */
+  text-align: center; /* Centre le texte */
+  z-index: 1; /* Assure que le titre reste au-dessus de l'image */
+}
+
+/* Ajout de styles pour mobile */
+@media (max-width: 768px) {
+  .habitat-card-img {
+    height: 150px; /* Réduit la hauteur des images sur les petits écrans */
+  }
+
+  .habitat-card-title {
+    font-size: 1rem; /* Ajuste la taille du texte pour le mobile */
+    padding: 3px 8px; /* Réduit les marges internes */
+  }
+}

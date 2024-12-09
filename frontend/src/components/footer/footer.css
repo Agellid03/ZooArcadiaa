@@ -1,0 +1,39 @@
+.footer {
+  background-color: var(--primary-color); 
+  color: var(--light, #fff); 
+  padding: 20px 0;
+  font-family: var(--body-font, Arial, sans-serif);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.footer h5 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-family: var(--title-font, "Helvetica Neue", sans-serif);
+}
+
+.footer p {
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+.footer a {
+  color: var(--light, #fff);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: var(--secondary, #f0a500); /* Couleur de survol */
+}
+
+@media (max-width: 768px) {
+  .footer h5, 
+  .footer p {
+    text-align: center;
+  }
+
+  .footer > .row {
+    gap: 20px; 
+  }
+}

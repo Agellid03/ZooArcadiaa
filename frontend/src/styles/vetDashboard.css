@@ -1,0 +1,34 @@
+.vet-dashboard {
+  text-align: center;
+  padding: 20px;
+}
+
+.vet-dashboard h2 {
+  font-size: 2rem;
+  color: #0056b3;
+}
+
+.vet-dashboard p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.vet-dashboard-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.dashboard-button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dashboard-button i {
+  font-size: 1.5rem;
+}

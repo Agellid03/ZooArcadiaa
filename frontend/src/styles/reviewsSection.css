@@ -1,0 +1,27 @@
+.reviews_section {
+  background-color: var(--secondary-color);
+  padding: 20px 0;
+}
+
+.review-card {
+  border: none;
+  background: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.review-card:hover {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.review-text {
+  font-size: 1.1rem;
+  font-family: var(--body-font);
+  color: #555;
+}
+
+.review-author {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #888;
+}

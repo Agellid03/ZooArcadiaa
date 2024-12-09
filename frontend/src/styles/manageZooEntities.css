@@ -1,0 +1,71 @@
+/* Général */
+.manage-zoo-entities {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+/* Titres */
+.manage-zoo-entities h2,
+.manage-zoo-entities h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #495057;
+  font-weight: bold;
+}
+
+/* Section "Ajouter un service" */
+.add-service-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Carte du formulaire */
+.add-service-card {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.add-service-card .card-header {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.add-service-form {
+  padding: 10px;
+}
+
+.add-service-form .form-input {
+  border-radius: 8px;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.add-service-form .form-input:focus {
+  border-color: #28a745;
+  box-shadow: 0px 0px 4px rgba(40, 167, 69, 0.8);
+}
+
+/* Bouton stylisé */
+.btn-add-service {
+  background-color: #28a745;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  color: #ffffff;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-add-service:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+.btn-add-service:active {
+  transform: translateY(0px);
+}
