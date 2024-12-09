@@ -10,11 +10,10 @@ import "../footer/footer.css"; // Importation du fichier CSS spécifique au foot
  */
 const Footer = () => {
   return (
-    <footer className="footer"> {/* Section footer avec une classe CSS dédiée */}
-      <Container> {/* Conteneur Bootstrap pour centrer et structurer le contenu */}
-        <Row> {/* Ligne Bootstrap pour diviser le footer en colonnes */}
-          {/* Colonne : Horaires d'ouverture */}
-          <Col xs="12" md="6"> {/* Colonne responsive (12 colonnes sur mobile, 6 sur desktop) */}
+    <footer className="footer"> 
+      <Container> 
+        <Row> 
+          <Col xs="12" md="6">
             <h5>Nos horaires</h5> {/* Titre de la section */}
             <p>
               Du Lundi au Vendredi :<br />

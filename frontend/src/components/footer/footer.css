@@ -1,10 +1,9 @@
 .footer {
-  background-color: var(--primary-dark, #333); /* Couleur de fond */
-  color: var(--light, #fff); /* Couleur du texte */
+  background-color: var(--primary-color); 
+  color: var(--light, #fff); 
   padding: 20px 0;
   font-family: var(--body-font, Arial, sans-serif);
-  border-top: 2px solid var(--secondary, #555); /* Séparation visuelle */
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .footer h5 {
@@ -35,6 +34,6 @@
   }
 
   .footer > .row {
-    gap: 20px; /* Ajout d'un espace entre les colonnes */
+    gap: 20px; 
   }
 }
