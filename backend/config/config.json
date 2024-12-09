@@ -1,0 +1,16 @@
+{
+  "development": {
+    "username": "root",
+    "password": "SevenPounds93!",
+    "database": "zoo_arcadia",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "SevenPounds93!",
+    "database": "zoo_arcadia",
+    "host": "localhost",
+    "dialect": "mysql"
+  }
+}
