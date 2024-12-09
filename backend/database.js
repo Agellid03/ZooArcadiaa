@@ -1,7 +1,7 @@
 const { Sequelize } = require('sequelize');
 
 // Connexion à la base de données
-const sequelize = new Sequelize('zoo_management', 'root', 'password', {
+const sequelize = new Sequelize('zoo_management', 'root', 'SevenPounds93!', {
   host: 'localhost',
   dialect: 'mysql',
 });
