@@ -1,22 +1,22 @@
 /* Section principale contenant les habitats */
 .habitats_section {
-  padding: 20px; /* Ajout d'un espace autour de la section */
-  margin: 0; /* Supprime les marges extérieures */
+  padding: 20px; 
+  margin: 0; 
   background-color: var(--secondary-color);
 }
 
 /* Style des liens entourant chaque carte */
 .habitat-link {
-  text-decoration: none; /* Supprime le soulignement des liens */
-  color: inherit; /* Inhère la couleur du texte selon le contexte */
+  text-decoration: none; 
+  color: inherit; 
 }
 
 /* Style des cartes */
 .habitat-card {
-  border: none; /* Supprime les bordures par défaut */
-  overflow: hidden; /* Empêche le contenu de dépasser les limites */
-  transition: transform 0.3s ease-in-out; /* Ajoute un effet de zoom progressif */
-  position: relative; /* Nécessaire pour positionner le titre */
+  border: none; 
+  overflow: hidden; 
+  transition: transform 0.3s ease-in-out; 
+  position: relative; 
 }
 
 /* Effet au survol des cartes */
@@ -26,10 +26,10 @@
 
 /* Style des images dans les cartes */
 .habitat-card-img {
-  height: 200px; /* Définit une hauteur fixe pour les images */
-  width: 100%; /* Les images prennent toute la largeur de la carte */
-  object-fit: cover; /* Recadre l'image pour couvrir entièrement sans déformation */
-  border-radius: 10px; /* Ajoute des coins arrondis aux images */
+  height: 200px; 
+  width: 100%; 
+  object-fit: cover; 
+  border-radius: 10px; 
 }
 
 /* Style du titre dans chaque carte */

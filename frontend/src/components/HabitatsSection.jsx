@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Card, CardImg, CardTitle, Col, Container, Row } from "reactstrap"; // Import des composants Bootstrap pour structurer les cartes
 import "../styles/habitatsSection.css"; // Import du fichier de style dédié
 
-// Composant HabitatSection pour afficher les différents habitats disponibles dans le zoo
+
 const HabitatSection = () => {
   // Liste des habitats avec leur nom et le chemin de leur image
   const habitats = [
